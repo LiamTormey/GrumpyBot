@@ -6,8 +6,8 @@ module.exports = async (mapped, msg) => {
     const embed = new Discord.RichEmbed()
     .setColor('#0099ff')
     .setTitle('Grumpy Bot')
-    .setURL('https://discord.gg/QHPzcq')
-    .setAuthor('by Teh', '', 'https://discord.gg/QHPzcq')
+    .setURL('https://discord.gg/Ga3kk5c')
+    .setAuthor('by Teh', '', 'https://discord.gg/Ga3kk5c')
     //.setDescription('A bot to remind everyone how much you hate them.')
     //.setThumbnail('https://i.imgur.com/wSTFkRM.png')
     .addField('`Command Access`', 'Only members with a "GrumpyBotAdmin" role can access commands. If the role doesn\'t exist, create it')
@@ -22,7 +22,7 @@ module.exports = async (mapped, msg) => {
     //.addField('Inline field title', 'Some value here', true)
     //.setImage('https://i.imgur.com/wSTFkRM.png')
     .setTimestamp()
-    .setFooter('Need additional help or want to report an issue to the creator? Join the discord! https://discord.gg/QHPzcq', '');
+    .setFooter('Need additional help or want to report an issue to the creator? Join the discord! https://discord.gg/Ga3kk5c', '');
 
     msg.channel.send(embed)
 }
