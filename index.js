@@ -115,7 +115,7 @@ function start_discord_server(commands) {
         
         if(msg.content.substring(0, 2) == "++") msg.content = msg.content.substring(2)
         else return; 
-        if(!msg.member.roles.map(role => role.name).includes("GrumpyBotAdmin") && msg.content.substring(0,4).toLowerCase() != "help") { 
+        if(!msg.member.roles.map(role => role.name).includes("GrumpyBotAdmin") && msg.content.substring(0,4).toLowerCase() != "help" && (msg.member.user.id != msg.guild.owner.user.id)) { 
             msg.reply("You dont have the admin rights to do that. Type ++help for help.")
             return; 
         }
