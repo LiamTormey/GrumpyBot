@@ -10,7 +10,7 @@ module.exports = async (mapped, msg) => {
     .setAuthor('by Teh', '', 'https://discord.gg/Ga3kk5c')
     //.setDescription('A bot to remind everyone how much you hate them.')
     //.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-    .addField('`Command Access`', 'Only members with a "GrumpyBotAdmin" role can access commands. If the role doesn\'t exist, create it')
+    .addField('`Command Access`', 'Only the server owner or members with a "GrumpyBotAdmin" role can access commands. If the role doesn\'t exist, create it')
     .addField('`++add insult "i hate you"`', 'add an insult; must use quotation marks.')
     .addField('`++get insults`', 'gets a list of all insults')
     .addField('`++delete insult 1`', 'delete an insult by its ID. Use "++get insults" to get ID numbers')

@@ -8,7 +8,7 @@ module.exports = async (mapped, msg) => {
         msg.reply("no insults have been added. Type ++help for help.")
         return; 
     }
-    let replies = common.arrayJoin(insults,"\n\n", 1000)
+    let replies = common.arrayJoin(insults,"\n\n", 500)
     replies.forEach( r => msg.channel.send(`\`\`\`${r}\`\`\``))
     //const get = insults.join("\n\n")
     //msg.reply(`\`\`\`${}\`\`\``)
