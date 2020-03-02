@@ -95,7 +95,8 @@ function start_discord_server(commands) {
             const opt = random(1,2); 
 
             if (true) {
-                const insults = data.insults
+                const insults = data.insults || [] 
+                if(insults.length == 0) return; 
                 msg.reply(insults[random(0, insults.length )]);
             } else if(opt === 2 && msg.content.length >= 5) { 
                 const content  = msg.content 
